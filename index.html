@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>We On!!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" >
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylsheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" >
+</head>
+<body class="body">
+    <header>
+        <div class="wrapper">
+            <a href="#" class="logo" aria-label="logo"><img src="logo.png" alt=""></a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-inner">
+            <h1>We on!!</h1>
+            <p>Where brother's and Sister's meet together</p>
+            <a href="pages/groove.html">
+                <button type="submit" class="btn">Explore</button>
+            </a>
+            <i class="bx bxs-chevrons-right" onclick="changeBackgroundImage()"></i>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+    </main>
+
+    <nav class="nav-bar">
+        <ul>
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="pages/galler.html">Gallery</a>
+            </li>
+            <li>
+                <a href="pages/contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="#" onclick="toggleSublist()">Events +</a>
+                <ul id="sublist" style="display: none;">
+                    <li><a href="pages/hiphop.html">HipHop</a></li>
+                    <li><a href="pages/groove.html">Groove</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+    <!-- Custom js file -->
+    <script src="js/script.js"></script>
+
+    <!-- Swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+
+        // Navbar Section
+        let main = document.querySelector('.main');
+        const hamburger = document.querySelector(".wrapper .hamburger");
+        hamburger.onclick = function() {
+            body = document.querySelector(".body");
+            body.classList.toggle("active");
+        }
+
+        // change images
+        var imageIndex = 0;
+        var imageList = ["styles/images/home/home4.jpg", "styles/images/home/home5.jpg", "styles/images/home/home6.jpg", "styles/images/home/home7.jpg", "styles/images/home/home8.jpg"];
+
+        function changeBackgroundImage() {
+            var mainElement = document.querySelector(".main");
+            mainElement.style.backgroundImage = 'url("' + imageList[imageIndex] + '")';
+
+            // Increment the image index or reset it to 0
+            imageIndex = (imageIndex + 1) % imageList.length;
+        }
+
+        // Function to redirect after 10 seconds
+        function redirectToGroove() {
+            window.location.href = "pages/groove.html";
+        }
+        // Set timeout to call the redirect function after 10 seconds
+        setTimeout(redirectToGroove, 10000);
+    </script>
+</body>
+</html>

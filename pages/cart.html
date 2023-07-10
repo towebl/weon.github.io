@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="cart.css">
+
+     <!-- Swiper CDN link -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" >
+
+     <!-- Cloudflare link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Header */
+        .header {
+        background: #333;
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        .header .logo {
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        }
+
+        .header .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+        }
+
+        .header .navbar a.active {
+        font-weight: bold;
+        }
+
+        .header .icons {
+        display: flex;
+        align-items: center;
+        }
+
+        .header .icons a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+        }
+
+        /* Box Container */
+        .box-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin-top: 20px;
+        }
+
+        .box {
+        background: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        }
+
+        .box .icons a {
+        color: #333;
+        text-decoration: none;
+        margin-right: 10px;
+        }
+
+        .box .image img {
+        width: 100%;
+        height: auto;
+        }
+
+        .box h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        }
+
+        .box .price {
+        margin-top: 10px;
+        }
+
+        .box .price span {
+        color: #999;
+        text-decoration: line-through;
+        margin-left: 5px;
+        }
+
+        .box .cart {
+        margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section Start -->
+    <header class="header">
+
+        <a href="#" class="logo" aria-label="logo"><i class="fas fa-glass-cheers"></i></a>
+
+        <nav class="navbar">
+            <a href="/index.htm" aria-label="nav" class="">Home</a>
+            <a href="#" aria-label="nav" class="">Events</a>
+            <a href="#" aria-label="nav" class="">Hip Hop</a>
+            <a href="groove.htm" aria-label="nav" class="active">Groove</a>
+            <a href="#" aria-label="nav" class="">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="#" aria-label="cart" class="fas fa-shopping-cart"></a>
+            <p id="count">0</p>
+            <a href="#" aria-label="user" class="fas fa-user"></a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="search here...." id="input-box">
+            <label for="" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- Header Section End -->
+
+
+
+    <!-- Arrivals Section Start -->
+
+    <section class="arrivals" id="arrivals">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.8) 77%), linear-gradient(180deg, rgba(255, 204, 204, 0) 96%, rgba(0, 0, 0, 1) 40%), url(images/groove/home4.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>Get your ticket now!!</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.8) 77%), linear-gradient(180deg, rgba(255, 204, 204, 0) 96%, rgba(0, 0, 0, 1) 40%), url(images/groove/home5.jpg) no-repeat;">
+                    <div class="content">
+                       <h3>Get your ticket now!!</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.8) 77%), linear-gradient(180deg, rgba(255, 204, 204, 0) 96%, rgba(0, 0, 0, 1) 40%), url(images/groove/home6.jpg) no-repeat;">
+                    <div class="content">
+                       <h3>Get your ticket now!!</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.8) 77%), linear-gradient(180deg, rgba(255, 204, 204, 0) 96%, rgba(0, 0, 0, 1) 40%), url(images/groove/home7.jpg) no-repeat;">
+                    <div class="content">
+                       <h3>Get your ticket now!!</h3>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 0.8) 77%), linear-gradient(180deg, rgba(255, 204, 204, 0) 96%, rgba(0, 0, 0, 1) 40%), url(images/groove/home8.jpg) no-repeat;">
+                    <div class="content">
+                       <h3>Get your ticket now!!</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Arrivals Section End -->
+
+
+
+
+    <!-- Cart item Section Start -->
+
+    <section class="cart">
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartitem">Your cart is empty</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$0.00</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart item Section End -->
+
+
+
+
+
+
+    <!-- Footer Section Start -->
+
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a aria-label="link" href="/index.htm"><i class="fas fa-arrow-right"></i> Home</a>
+                <a aria-label="link" href="hiphop.htm"><i class="fas fa-arrow-right"></i> Hiphop</a>
+                <a aria-label="link" href="groove.htm"><i class="fas fa-arrow-right"></i> Groove</a>
+                <a aria-label="link" href="contact.htm"><i class="fas fa-arrow-right"></i> Contact</a>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <a href="#"><i class="fas fa-phone"></i> +27 6703 5125</a>
+                <a href="#"><i class="fas fa-envelope"></i> weon101@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Johannesburg</a>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            </div>
+        </div>
+
+        <div class="credit"> created by <span>mr. web designer</span> | all rights reserved</div>
+    </section>
+
+    <!-- Footer Section End -->
+
+
+
+
+
+    <!-- Swiper CDN Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="js/pages.js"></script>
+    <script src="addcart.js"></script>
+</body>
+</html>
